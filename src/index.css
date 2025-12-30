@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Premium soft color palette */
+    --background: 220 20% 98%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    /* Sophisticated slate-blue primary */
+    --primary: 220 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft secondary */
+    --secondary: 220 15% 94%;
+    --secondary-foreground: 220 25% 20%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 220 60% 96%;
+    --accent-foreground: 220 70% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 220 70% 50%;
+
+    --radius: 0.75rem;
+
+    /* Premium tokens */
+    --section-bg: 220 20% 97%;
+    --badge-bg: 220 60% 96%;
+    --badge-text: 220 70% 40%;
+    --highlight: 220 70% 55%;
+    --gradient-start: 220 70% 50%;
+    --gradient-end: 250 60% 55%;
+  }
+
+  .dark {
+    --background: 220 25% 6%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 25% 9%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 25% 6%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 220 70% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 220 15% 90%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 220 40% 18%;
+    --accent-foreground: 220 70% 75%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 220 15% 95%;
+
+    --border: 220 20% 15%;
+    --input: 220 20% 15%;
+    --ring: 220 70% 60%;
+
+    --section-bg: 220 25% 8%;
+    --badge-bg: 220 40% 15%;
+    --badge-text: 220 70% 75%;
+    --highlight: 220 70% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Premium fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-float {
+  animation: subtle-float 4s ease-in-out infinite;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Premium section styling */
+.section-padding {
+  @apply py-20 md:py-28 lg:py-32;
+}
+
+/* Background for alternating sections */
+.bg-section {
+  @apply bg-[hsl(var(--section-bg))];
+}
+
+/* Badge styling */
+.bg-badge {
+  @apply bg-[hsl(var(--badge-bg))];
+}
+
+.text-badge-foreground {
+  @apply text-[hsl(var(--badge-text))];
+}
+
+.container-narrow {
+  @apply max-w-4xl mx-auto px-5 sm:px-6 md:px-8 lg:px-10;
+}
+
+.container-wide {
+  @apply max-w-6xl mx-auto px-5 sm:px-6 md:px-8 lg:px-10;
+}
+
+/* Section divider */
+.section-divider {
+  @apply w-full h-px bg-gradient-to-r from-transparent via-border to-transparent;
+}
+
+/* Premium glass effect */
+.glass {
+  @apply bg-card/80 backdrop-blur-xl border border-border/50;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-accent-foreground bg-clip-text text-transparent;
+}
+
+/* Premium card hover */
+.premium-card {
+  @apply bg-card border border-border rounded-2xl transition-all duration-300;
+}
+
+.premium-card:hover {
+  @apply border-primary/20 shadow-lg shadow-primary/5;
+}
+
+/* Stat card */
+.stat-card {
+  @apply relative overflow-hidden bg-card border border-border rounded-2xl p-6 transition-all duration-300;
+}
+
+.stat-card::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity duration-300;
+}
+
+.stat-card:hover::before {
+  @apply opacity-100;
+}
+
+.stat-card:hover {
+  @apply border-primary/30 -translate-y-1;
+}

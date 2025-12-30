@@ -1,0 +1,41 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- Accessible title -->
+  <title id="logoTitle">Paawan Srivastava – Personal Logo</title>
+
+  <!-- Accessible description -->
+  <desc id="logoDesc">
+    PS monogram logo used for paawan.dev personal portfolio and favicon.
+  </desc>
+
+  <!-- Optional metadata -->
+  <metadata>
+    Author: Paawan Srivastava
+    Website: https://paawan.dev
+    Usage: Personal portfolio logo and favicon
+    Created: 2025
+    License: Personal use
+  </metadata>
+  
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="128" height="128" rx="28" fill="url(#bgGradient)" />
+
+  <text
+    x="64"
+    y="78"
+    text-anchor="middle"
+    font-size="56"
+    font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-weight="700"
+    fill="#0F172A"
+  >
+    PS
+  </text>
+</svg>
+
