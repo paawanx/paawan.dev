@@ -31,7 +31,6 @@ const ExperienceSection = () => {
         "Implemented travel expense management module with approval workflows and receipt processing",
         "Created event management system for university activities with registration and attendance tracking",
         "Designed and deployed internal URL shortener service for marketing and communications teams",
-        "Developed Angular wrapper for BIM 360 Viewer SDK enabling seamless integration across multiple projects",
         "Migrated legacy WebForms applications to modern ASP.NET MVC and Angular stack",
         "Maintained both on-premise and cloud multi-tenant deployments for university clients",
       ],

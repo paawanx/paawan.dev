@@ -59,7 +59,7 @@ const AboutSection = () => {
             </p>
             <p>
               From architecting BIM systems processing <span className="text-foreground font-medium">200K+ engineering drawings</span> to 
-              building admission portals serving <span className="text-foreground font-medium">10K–15K concurrent users</span>—I deliver scalable, 
+              building admission portals serving <span className="text-foreground font-medium">10K–15K concurrent users</span>, I deliver scalable, 
               maintainable solutions that perform under pressure.
             </p>
             <p>

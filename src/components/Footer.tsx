@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2025 Paawan Srivastava — Senior Software Engineer
+            © 2025 Paawan Srivastava - Senior Software Engineer
           </p>
 
           {/* Social links */}
