@@ -38,12 +38,12 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding bg-section">
+    <section id="experience" className="section-padding bg-section" aria-labelledby="experience-heading">
       <div className="container-wide">
         {/* Section header */}
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">Career</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          <h2 id="experience-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Professional Experience
           </h2>
         </div>

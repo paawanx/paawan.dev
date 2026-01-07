@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="section-padding bg-section">
+    <section id="contact" className="section-padding bg-section" aria-labelledby="contact-heading">
       <div className="container-narrow">
         {/* Section header */}
         <div className="text-center mb-14">
           <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">Contact</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5">
+          <h2 id="contact-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5">
             Let's Connect
           </h2>
           <p className="text-lg text-muted-foreground max-w-lg mx-auto">

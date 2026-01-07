@@ -35,12 +35,12 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="section-padding bg-section">
+    <section id="about" className="section-padding bg-section" aria-labelledby="about-heading">
       <div className="container-wide">
         {/* Section header */}
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">About</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          <h2 id="about-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Engineering Excellence
           </h2>
         </div>

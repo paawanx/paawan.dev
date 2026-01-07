@@ -83,12 +83,12 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding">
+    <section id="skills" className="section-padding" aria-labelledby="skills-heading">
       <div className="container-wide">
         {/* Section header */}
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">Expertise</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          <h2 id="skills-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Technical Skills
           </h2>
         </div>

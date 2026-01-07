@@ -4,7 +4,7 @@ import profilePicture from '../assets/images/profile_picture.jpg';
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex flex-col pt-20 relative overflow-hidden">
+    <section className="min-h-screen flex flex-col pt-20 relative overflow-hidden" aria-label="Hero section - Introduction">
       {/* Subtle background gradient with texture */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/40 via-background to-background pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent pointer-events-none" />

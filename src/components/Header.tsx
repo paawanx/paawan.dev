@@ -41,8 +41,9 @@ const Header = () => {
             ? "glass shadow-sm"
             : "bg-transparent"
         }`}
+        role="banner"
       >
-        <nav className="container-wide py-4">
+        <nav className="container-wide py-4" aria-label="Main navigation">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a
